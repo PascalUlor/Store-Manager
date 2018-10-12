@@ -59,7 +59,7 @@ To be made available soon
 
 
 1. [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2203196)
-2. [Github Repo](https://github.com/PascalUlor/Maintenance-Tracker-App)
+2. [Github Repo](https://github.com/PascalUlor/Store-Manager)
 
 
 ## Acknowledgment

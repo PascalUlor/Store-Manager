@@ -31,7 +31,7 @@ main {
     background: #FFFFFF;
     border-bottom: none;
 }
-.form-title {
+.form-title, .table-title {
     display: flex;
     flex-direction: column;
     align-items: center;

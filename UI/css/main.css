@@ -99,6 +99,18 @@ button.view {
   color: #ffffff;
   opacity: .8;
 }
+
+button.btn-submit{
+  border-radius: .36em;
+  border: .1px solid grey;
+  padding: .25em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: rgb(12, 241, 12);
+  color: #ffffff;
+  opacity: .8;
+}
+
 button.btn-close {
   border-radius: .36em;
   border: .1px solid grey;
@@ -116,6 +128,17 @@ button.btn-add {
   font-size: 1em;
   cursor: pointer;
   background-color: #80ffc1;
+  color: #ffffff;
+  opacity: .8;
+}
+
+button.btn-edit {
+  border-radius: .36em;
+  border: .1px solid grey;
+  padding: .25em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #e5f506;
   color: #ffffff;
   opacity: .8;
 }

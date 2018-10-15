@@ -64,6 +64,7 @@
                             <th>Product</th>
                             <th>Date Added</th>
                             <th>Details</th>
+                            <th>Edit</th>
                             <th>Remove</th>
                         </tr>
                     </thead>
@@ -73,7 +74,8 @@
                             <td>00001</td>
                             <td>NesCafe</td>
                             <td>13/10/2018 11:02am</td>
-                            <td><button onclick="toggleModal('product-details')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                             <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                         </tr>
                         <tr>
@@ -81,7 +83,8 @@
                             <td>00002</td>
                             <td>Oral B</td>
                             <td>20/09/2018 10:19am</td>
-                            <td><button onclick="toggleModal('product-details')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                             <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                         </tr>
                         <tr>
@@ -89,7 +92,8 @@
                             <td>00003</td>
                             <td>Detol</td>
                             <td>21/10/2018 12:22pm</td>
-                            <td><button onclick="toggleModal('product-details')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                             <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                         </tr>
                         <tr>
@@ -97,7 +101,8 @@
                             <td>00004</td>
                             <td>Blue Band</td>
                             <td>22/06/2018 01:02pm</td>
-                            <td><button onclick="toggleModal('product-details')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                             <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                         </tr>
                         <tr>
@@ -105,7 +110,8 @@
                             <td>00003</td>
                             <td>5 Alive</td>
                             <td>25/10/2018 10:02am</td>
-                            <td><button onclick="toggleModal('product-details')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
+                            <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                             <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                         </tr>
                     </tbody>
@@ -140,10 +146,43 @@
                 <p><label for="date" >Date Added</label></p>
                 <p>22/10/2018 01:02pm</p>
                 <br>
-                <button onclick="toggleModal('product-details')" class="btn-close"> <i class="icon ion-md-close"></i> Close</button>
+                <button onclick="toggleModal('product-details', 'modal')" class="btn-close"> <i class="icon ion-md-close"></i> Close</button>
                 <br>
                 <br>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-modal" id="edit">
+    <div class="product-modal-section" id="product-edit">
+        <div class="page-row">
+          <div class="page-col-12 product-modal-heading">
+            <h4>Product Details</h4>
+          </div>
+            <form class="page-col-10">
+                <p><label for="title" class="ch-label">Product Name</label></p>
+                <p>
+                   <input type="text" value="Generic Product">
+                </p>
+                <br>
+                <p><label for="type">Product Category</label></p>
+                <p><input type="text" value="Beverages"></p>
+                <br>
+                <p><label for="description">Description</label>
+                </p>
+                <p><textarea>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas at architecto molestiae numquam, laborum possimus quam odit nam nisi velit consequatur cumque expedita.</textarea></p>
+                <br>
+                <p><label for="status">Status</label></p>
+                <p><input type="text" value="Available"></p>
+                <br>
+                <p><label for="date" >Date Added</label></p>
+                <p><input type="date" value="22/10/2018 01:02pm"></p>
+                <br>
+                <button onclick="toggleModal('product-edit', 'edit')" class="btn-submit"> <i class="icon ion-md-close"></i> Submit</button>
+                <br>
+                <br>
+            </form>
         </div>
     </div>
 </div>

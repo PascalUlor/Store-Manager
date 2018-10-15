@@ -1,13 +1,14 @@
 /**
  * Display Modal
  * @param {string} id - The id of the modal
+ * @param {string} modal - The id of the modal container
  */
-const toggleModal = (id) => {
-  if (document.getElementById('modal').style.display === 'block') {
-      document.getElementById('modal').style.display = 'none';
+const toggleModal = (id, modal) => {
+  if (document.getElementById(modal).style.display === 'block') {
+      document.getElementById(modal).style.display = 'none';
       document.getElementById(id).style.display = 'none';
   } else {
-      document.getElementById('modal').style.display = 'block';
+      document.getElementById(modal).style.display = 'block';
       document.getElementById(id).style.display = 'block';
   }
 };

@@ -9,7 +9,8 @@
   <link rel="shortcut icon" href="favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/admin.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
 </head>
 
 <body>
@@ -28,45 +29,57 @@
 
   </header>
   <!-- Side nav for mobile -->
-  <nav class="mobile-nav" id="aside">
+  <nav class="mobile-nav">
     <ul class="mobile-nav__items">
-      <li class="mobile-nav__item">
-          <img src="./public/img/profile.jpg">
-      </li>
-      <li class="mobile-nav__item">
+      <li class="mobile-nav__item aside__item">
         <a href="index.html">Home</a>
       </li>
-      <li class="mobile-nav__item">
-        <a href="create-request.html">Views</a>
-      </li>
-      <li class="mobile-nav__item mobile-nav_button">
-        <a href="signup.html">Events</a>
+      <li class="mobile-nav__item aside__item">
+        <a href="login.html">Login</a>
       </li>
     </ul>
   </nav>
-  <main class="sitewrapp">
+  <main class="layout">
+      <div class="background-image"></div>
    
     <section class="outline">
         <aside class="aside-nav" id="aside">
             <ul class="aside__items">
               <li class="aside__item">
-                <img src="./public/img/profile.jpg">
-              </li>
-              <li class="aside__item">
                 <a href="index.html">Home</a>
               </li>
               <li class="aside__item">
-                <a href="create-request.html">Inventory</a>
+                <a href="#">Logout</a>
               </li>
-              <li class="aside__item nav_button">
-                <a href="signup.html">Users</a>
+              <li class="aside__item">
+                <a href="#">Users</a>
               </li>
             </ul>
         </aside>
 
-        <div class="content">
-            
-        </div>
+        <div id="dash-board">
+          <section class="dash-board wallpaper">
+              <a href="#">
+                <h1 class="dash-board-title">Create User</h1>
+                <h2 class="sub-title">Details</h2>
+                <p class="page-info">Create new user accounts for store attendants</p>
+              </a>
+            </section>
+            <section class="dash-board wallpaper">
+                <a href="#">
+                  <h1 class="dash-board-title">Create Product</h1>
+                  <h2 class="sub-title">Details</h2>
+                  <p class="page-info">Add products to your inventory</p>
+                </a>
+              </section>
+              <section class="dash-board wallpaper">
+                  <a href="admin-record.html">
+                    <h1 class="dash-board-title">Records</h1>
+                    <h2 class="sub-title">Details</h2>
+                    <p class="page-info">View store attendants sales records and details</p>
+                  </a>
+                </section>
+      </div>
 
     </section>
     
@@ -75,15 +88,12 @@
     <nav>
       <ul class="footer-links">
         <li class="footer-link">
-          <a href="#">Support</a>
-        </li>
-        <li class="footer-link">
-          <a href="#">Terms of Use</a>
+            <a href="#">Copyright of &copy;2018 Store Manager By Pascal</a>
         </li>
       </ul>
     </nav>
   </footer>
-  <script src="./public/js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

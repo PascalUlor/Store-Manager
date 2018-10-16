@@ -65,7 +65,7 @@
                 <p class="page-info">Create new user accounts for store attendants</p>
               </a>
             </section>
-            <section class="dash-board wallpaper">
+            <section onclick="toggleModal('product-deets', 'newproduct')" class="btn-edit dash-board wallpaper">
                 <a href="#">
                   <h1 class="dash-board-title">Create Product</h1>
                   <h2 class="sub-title">Details</h2>
@@ -84,6 +84,39 @@
     </section>
     
   </main>
+
+  <div class="product-modal" id="newproduct">
+      <div class="product-modal-section" id="product-deets">
+          <div class="page-row">
+            <div class="page-col-12 product-modal-heading">
+              <h4>Product Details</h4>
+            </div>
+              <form class="page-col-10">
+                  <p><label for="title" class="ch-label">Product Name</label></p>
+                  <p>
+                     <input type="text" value="">
+                  </p>
+                  <br>
+                  <p><label for="type">Product Category</label></p>
+                  <p><input type="text" value=""></p>
+                  <br>
+                  <p><label for="description">Description</label>
+                  </p>
+                  <p><textarea></textarea></p>
+                  <br>
+                  <p><label for="status">Status</label></p>
+                  <p><input type="text" value=""></p>
+                  <br>
+                  <p><label for="date" >Date Added</label></p>
+                  <p><input type="date" value=""></p>
+                  <br>
+                  <button onclick="toggleModal('product-edit', 'edit')" class="btn-submit"> <i class="icon ion-md-close"></i> Submit</button>
+                  <br>
+                  <br>
+              </form>
+          </div>
+      </div>
+  </div>
   <footer id="landing-page-footer">
     <nav>
       <ul class="footer-links">

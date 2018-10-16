@@ -531,4 +531,67 @@ tr:nth-child(odd) {
   
   }
 
+  /* Asides Styling */
+
+  .aside-nav {
+    display: none;
+  }
+
+  #aside {
+    background: #2ddf5c;
+  }
+
+  .aside__items {
+    padding: 0;
+  	margin: 0;
+  	list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside__item {
+  	margin: 1rem 0;
+  }
+
+  .aside__item a, .mobile-nav__item a {
+  	text-decoration: none;
+  	font-weight: bold;
+    border-bottom: 1px solid #0d172e;
+    border-top: 1px solid #0d172e;
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 28px 20px;
+    text-decoration: none;
+  }
+
+  .aside__item a:hover, .main-nav__item a:active {
+  	color: #FFFFFF;
+  	border-bottom: 5px solid #FFFFFF;
+  }
+
+  @media (min-width: 40rem) {
+  .aside-nav {
+    background-color: #ccc;
+    width: 20%;
+  	min-height: 90vh;
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+  .outline {
+    display: flex;
+  	flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
+  }
+
   

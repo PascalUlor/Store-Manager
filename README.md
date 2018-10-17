@@ -3,6 +3,13 @@
 **Store Manager** is a is a fullstack javascript web application that helps store owners manage sales and product inventory records.
 
 
+<br />
+<br />
+<img width="1000" height="400" alt="Store-Manager-App-screenshot" src="/screenshot/landing page.PNG">
+
+<br />
+
+
 # Table Of Content
 1. [Getting Started](#getting-started "Getting Started")
    ..*[prerequisites](#prerequisites "Prerequisites")

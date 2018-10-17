@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pascal Ulor</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+
+<body>
+  <div class="backdrop"></div>
+  <header class="main-header">
+    <div>
+      <!-- Mobile Nav button -->
+      <button class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+
+    </div>
+    
+
+  </header>
+  <!-- Side nav for mobile -->
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__items">
+      <li class="mobile-nav__item aside__item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="mobile-nav__item aside__item">
+        <a href="login.html">Login</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="layout">
+      <div class="background-image"></div>
+   
+    <section class="outline">
+        <aside class="aside-nav" id="aside">
+            <ul class="aside__items">
+              <li class="aside__item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="aside__item">
+                <a href="#">Logout</a>
+              </li>
+              <li class="aside__item">
+                <a href="#">Profile</a>
+              </li>
+            </ul>
+        </aside>
+
+        <div id="dash-board">
+          <section onclick="toggleModal('user-deets', 'newuser')" class="btn-edit dash-board wallpaper">
+              <a href="#">
+                <h1 class="dash-board-title">Create User</h1>
+                <h2 class="sub-title">Details</h2>
+                <p class="page-info">Create new user accounts for store attendants</p>
+              </a>
+            </section>
+            <section onclick="toggleModal('product-deets', 'newproduct')" class="btn-edit dash-board wallpaper">
+                <a href="#">
+                  <h1 class="dash-board-title">Create Product</h1>
+                  <h2 class="sub-title">Details</h2>
+                  <p class="page-info">Add products to your inventory</p>
+                </a>
+              </section>
+              <section class="dash-board wallpaper">
+                  <a href="admin-record.html">
+                    <h1 class="dash-board-title">Records</h1>
+                    <h2 class="sub-title">Details</h2>
+                    <p class="page-info">View store attendants sales records and details</p>
+                  </a>
+                </section>
+      </div>
+
+    </section>
+    
+  </main>
+  <!--Create new user account-->
+  <div class="product-modal" id="newuser">
+      <div class="product-modal-section" id="user-deets">
+          <div class="page-row">
+            <div class="page-col-12 product-modal-heading">
+              <h4>User Details</h4>
+            </div>
+              <form class="page-col-10">
+                  <p><label for="name" class="ch-label">Name</label></p>
+                  <p>
+                     <input type="text" value="">
+                  </p>
+                  <br>
+                  <p><label for="email" class="ch-label">Email</label></p>
+                  <p>
+                     <input type="email" value="">
+                  </p>
+                  <br>
+                  <p><label for="type">username</label></p>
+                  <p><input type="text" value=""></p>
+                  <br>
+                  <p><label for="password">Password</label>
+                  </p>
+                  <p><input type="password" value=""></p>
+                  <br>
+                  <p><label for="status">Priviledges</label></p>
+                  <p><select>
+                      <option>User</option>
+                      <option>Admin</option>
+                    </select>
+                  </p>
+                  <br>
+                  <p><label for="date" >Date Added</label></p>
+                  <p><input type="date" value=""></p>
+                  <br>
+                  <button onclick="toggleModal('product-edit', 'edit')" class="btn-submit"> <i class="icon ion-md-close"></i> Submit</button>
+                  <br>
+                  <br>
+              </form>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="product-modal" id="newproduct">
+      <div class="product-modal-section" id="product-deets">
+          <div class="page-row">
+            <div class="page-col-12 product-modal-heading">
+              <h4>Product Details</h4>
+            </div>
+              <form class="page-col-10">
+                  <p><label for="title" class="ch-label">Product Name</label></p>
+                  <p>
+                     <input type="text" value="">
+                  </p>
+                  <br>
+                  <p><label for="type">Product Category</label></p>
+                  <p><input type="text" value=""></p>
+                  <br>
+                  <p><label for="description">Description</label>
+                  </p>
+                  <p><textarea></textarea></p>
+                  <br>
+                  <p><label for="status">Status</label></p>
+                  <p><input type="text" value=""></p>
+                  <br>
+                  <p><label for="date" >Date Added</label></p>
+                  <p><input type="date" value=""></p>
+                  <br>
+                  <button onclick="toggleModal('product-edit', 'edit')" class="btn-submit"> <i class="icon ion-md-close"></i> Submit</button>
+                  <br>
+                  <br>
+              </form>
+          </div>
+      </div>
+  </div>
+  <footer id="landing-page-footer">
+    <nav>
+      <ul class="footer-links">
+        <li class="footer-link">
+            <a href="#">Copyright of &copy;2018 Store Manager By Pascal</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

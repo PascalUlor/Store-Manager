@@ -15,7 +15,7 @@
 
 <body>
   <div class="backdrop"></div>
-  <header>
+  <header class="main-header">
     <div>
       <!-- Mobile Nav button -->
       <button class="toggle-button">
@@ -52,13 +52,13 @@
                 <a href="#">Logout</a>
               </li>
               <li class="aside__item">
-                <a href="#">Users</a>
+                <a href="#">Profile</a>
               </li>
             </ul>
         </aside>
 
         <div id="dash-board">
-          <section class="dash-board wallpaper">
+          <section onclick="toggleModal('user-deets', 'newuser')" class="btn-edit dash-board wallpaper">
               <a href="#">
                 <h1 class="dash-board-title">Create User</h1>
                 <h2 class="sub-title">Details</h2>
@@ -84,6 +84,49 @@
     </section>
     
   </main>
+  <!--Create new user account-->
+  <div class="product-modal" id="newuser">
+      <div class="product-modal-section" id="user-deets">
+          <div class="page-row">
+            <div class="page-col-12 product-modal-heading">
+              <h4>User Details</h4>
+            </div>
+              <form class="page-col-10">
+                  <p><label for="name" class="ch-label">Name</label></p>
+                  <p>
+                     <input type="text" value="">
+                  </p>
+                  <br>
+                  <p><label for="email" class="ch-label">Email</label></p>
+                  <p>
+                     <input type="email" value="">
+                  </p>
+                  <br>
+                  <p><label for="type">username</label></p>
+                  <p><input type="text" value=""></p>
+                  <br>
+                  <p><label for="password">Password</label>
+                  </p>
+                  <p><input type="password" value=""></p>
+                  <br>
+                  <p><label for="status">Priviledges</label></p>
+                  <p><select>
+                      <option>User</option>
+                      <option>Admin</option>
+                    </select>
+                  </p>
+                  <br>
+                  <p><label for="date" >Date Added</label></p>
+                  <p><input type="date" value=""></p>
+                  <br>
+                  <button onclick="toggleModal('product-edit', 'edit')" class="btn-submit"> <i class="icon ion-md-close"></i> Submit</button>
+                  <br>
+                  <br>
+              </form>
+          </div>
+      </div>
+  </div>
+
 
   <div class="product-modal" id="newproduct">
       <div class="product-modal-section" id="product-deets">

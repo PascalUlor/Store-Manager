@@ -571,6 +571,13 @@ tr:nth-child(odd) {
   	border-bottom: 5px solid #FFFFFF;
   }
 
+  .outline {
+    display: flex;
+  	flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
   @media (min-width: 40rem) {
   .aside-nav {
     background-color: #ccc;

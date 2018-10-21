@@ -5,11 +5,11 @@
  */
 const toggleModal = (id, modal) => {
   if (document.getElementById(modal).style.display === 'block') {
-      document.getElementById(modal).style.display = 'none';
-      document.getElementById(id).style.display = 'none';
+    document.getElementById(modal).style.display = 'none';
+    document.getElementById(id).style.display = 'none';
   } else {
-      document.getElementById(modal).style.display = 'block';
-      document.getElementById(id).style.display = 'block';
+    document.getElementById(modal).style.display = 'block';
+    document.getElementById(id).style.display = 'block';
   }
 };
 
@@ -43,4 +43,3 @@ animate().then(() => {
   backdrop.removeEventListener('click', removeBackDrop);
   toggleButton.removeEventListener('click', mobileButton);
 });
-

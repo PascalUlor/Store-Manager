@@ -1,3 +1,15 @@
+[![Build Status](https://travis-ci.com/PascalUlor/Store-Manager.svg?branch=develop)](https://travis-ci.com/PascalUlor/Store-Manager)
+
+[![Coverage Status](https://coveralls.io/repos/github/PascalUlor/Store-Manager/badge.svg?branch=develop)](https://coveralls.io/github/PascalUlor/Store-Manager?branch=develop)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/39c6c776d51b91ef77c0/maintainability)](https://codeclimate.com/github/PascalUlor/Store-Manager/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/39c6c776d51b91ef77c0/test_coverage)](https://codeclimate.com/github/PascalUlor/Store-Manager/test_coverage)
+
+
+
+
+
 # Store-Manager
 
 **Store Manager** is a is a fullstack javascript web application that helps store owners manage sales and product inventory records.

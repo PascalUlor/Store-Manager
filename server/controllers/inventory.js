@@ -6,7 +6,7 @@ import db from '../models/testData';
  */
 export default class inventoryController {
   /**
-     * API method to (POST) create a product
+     * API method to (POST) add a product
      * @param {obj} req
      * @param {obj} res
      * @returns {obj} insertion error messages or success messages

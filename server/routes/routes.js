@@ -8,5 +8,9 @@ router.route('/products')
   .get(inventoryController.getAllProducts)
   .post(inventoryController.createProduct);
 
+router.route('/sales')
+  // .get(inventoryController.getAllProducts)
+  .post(inventoryController.createSales);
+
 
 export default router;

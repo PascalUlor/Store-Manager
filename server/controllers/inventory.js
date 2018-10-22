@@ -61,4 +61,36 @@ export default class inventoryController {
       });
     }
   }
+
+  /**
+     * API method to (POST) add a product
+     * @param {obj} req
+     * @param {obj} res
+     * @returns {obj} insertion error messages or success messages
+     */
+  static createSales(req, res) {
+    if (parseInt(req.body.userId, 10) === db.userDataBase[0].id) {
+      res.status(400);
+      res.json({
+        success: false,
+        message: 'You are not authorized to create sales',
+      });
+    } else {
+      db.salesRecord.push({
+        id: db.salesRecord.length + 1,
+        userId: parseInt(req.body.userId, 10),
+        productName: req.body.productName,
+        productNo: req.body.productNo,
+        dateSold: req.body.dateSold,
+        quantity: req.body.quantity,
+        price: req.body.price,
+      });
+      res.status(201);
+      res.json({
+        success: true,
+        message: 'Request created successfully',
+        data: db.salesRecord[db.salesRecord.length - 1],
+      });
+    }
+  }//
 }

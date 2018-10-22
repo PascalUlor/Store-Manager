@@ -36,4 +36,29 @@ export default class inventoryController {
       });
     }
   }// Method to create products ends
+
+  /**
+ * API method GET all products in the inventory
+ * @param {obj} req
+ * @param {obj} res
+ * @returns {obj} success message
+ */
+  static getAllProducts(req, res) {
+    if (db.inventory.length !== 0) {
+      if (!req.query.sort) {
+        res.status(200);
+        res.json({
+          success: true,
+          message: 'Successfully Retrieved inventory',
+          data: db.inventory,
+        });
+      }
+    } else {
+      res.status(404);
+      res.json({
+        success: false,
+        message: 'No product in the inventory',
+      });
+    }
+  }
 }

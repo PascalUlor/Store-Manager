@@ -93,4 +93,29 @@ export default class inventoryController {
       });
     }
   }//
+
+  /**
+ * API method GET all sale record
+ * @param {obj} req
+ * @param {obj} res
+ * @returns {obj} success message
+ */
+  static getAllSales(req, res) {
+    if (db.inventory.length !== 0) {
+      if (!req.query.sort) {
+        res.status(200);
+        res.json({
+          success: true,
+          message: 'Successfully Retrieved sales record',
+          data: db.salesRecord,
+        });
+      }
+    } else {
+      res.status(404);
+      res.json({
+        success: false,
+        message: 'No sales record',
+      });
+    }
+  }
 }

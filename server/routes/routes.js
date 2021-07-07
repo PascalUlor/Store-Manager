@@ -9,7 +9,7 @@ router.route('/products')
   .post(inventoryController.createProduct);
 
 router.route('/sales')
-  // .get(inventoryController.getAllProducts)
+  .get(inventoryController.getAllSales)
   .post(inventoryController.createSales);
 
 
